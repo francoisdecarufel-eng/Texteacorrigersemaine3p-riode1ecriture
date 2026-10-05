@@ -125,29 +125,29 @@
             </div>
 
             <!-- Manuscrit mystérieux à découvrir -->
-            <div class="parchment p-6 rounded-3xl shadow-xl space-y-4">
-                <div class="flex items-center gap-2 border-b-2 border-dashed border-[#8b5a2b]/30 pb-2">
-                    <span class="text-2xl">📜</span>
-                    <h3 class="text-lg font-black uppercase tracking-wider text-[#5c3a1d]">Le Manuscrit Poussiéreux (Texte original)</h3>
+            <div class="parchment p-8 rounded-3xl shadow-xl space-y-6 my-8"> <!-- Augmentation du padding (p-8) et marge verticale (my-8) -->
+                <div class="flex items-center gap-3 border-b-2 border-dashed border-[#8b5a2b]/30 pb-4">
+                    <span class="text-3xl">📜</span>
+                    <h3 class="text-xl font-black uppercase tracking-wider text-[#5c3a1d]">Le Manuscrit Poussiéreux (Texte original)</h3>
                 </div>
-                <div class="space-y-2 text-base md:text-lg italic leading-relaxed text-[#4a2e18]">
-                    <p class="pl-4 border-l-4 border-amber-600">hier soir un jeune garçon découvre une vieille cabane abandonnée près de la forêt</p>
-                    <p class="pl-4 border-l-4 border-amber-600">le petit explorateur avance doucement vers la porte mystérieuse</p>
-                    <p class="pl-4 border-l-4 border-amber-600">dans la cabane une grande coffre poussiéreux cache un ancien trésor</p>
-                    <p class="pl-4 border-l-4 border-amber-600">le garçon observe les objets étrange sur la table ronde</p>
-                    <p class="pl-4 border-l-4 border-amber-600">une petite lampe brisée éclaire le sombre pièce</p>
-                    <p class="pl-4 border-l-4 border-amber-600">derrière le vieux meuble un chat noir regarde le visiteur curieux</p>
-                    <p class="pl-4 border-l-4 border-amber-600">le jeune garçon trouve une carte secret dans la boîte en bois</p>
-                    <p class="pl-4 border-l-4 border-amber-600">cette découverte incroyable change son aventure mystérieuse</p>
+                <div class="space-y-4 text-base md:text-xl italic leading-loose text-[#4a2e18]"> <!-- Augmentation de l'interligne (leading-loose) et de l'espace (space-y-4) -->
+                    <!-- Remplacement de "hier soir" par "soudain" -->
+                    <p class="pl-5 border-l-4 border-amber-600">soudain un jeune garçon découvre une vieille cabane abandonnée près de la forêt</p>
+                    <p class="pl-5 border-l-4 border-amber-600">le petit explorateur avance doucement vers la porte mystérieuse</p>
+                    <p class="pl-5 border-l-4 border-amber-600">dans la cabane une grande coffre poussiéreux cache un ancien trésor</p>
+                    <p class="pl-5 border-l-4 border-amber-600">le garçon observe les objets étrange sur la table ronde</p>
+                    <p class="pl-5 border-l-4 border-amber-600">une petite lampe brisée éclaire le sombre pièce</p>
+                    <p class="pl-5 border-l-4 border-amber-600">derrière le vieux meuble un chat noir regarde le visiteur curieux</p>
+                    <p class="pl-5 border-l-4 border-amber-600">le jeune garçon trouve une carte secret dans la boîte en bois</p>
+                    <p class="pl-5 border-l-4 border-amber-600">cette découverte incroyable change son aventure mystérieuse</p>
                 </div>
             </div>
 
             <!-- SECTION DIDACTIQUE : ÉTAPE PAR ÉTAPE -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8"> <!-- Augmentation du gap (gap-8) et marge verticale (my-8) -->
                 
                 <!-- Sous-onglet didactique A : Repérer le GN -->
-                <div class="bg-[#24170d] p-6 rounded-3xl border border-amber-900 shadow-lg space-y-4">
-                    <h3 class="text-lg font-black text-amber-300 flex items-center gap-2">
+                <div class="bg-[#24170d] p-8 rounded-3xl border border-amber-900 shadow-lg space-y-6"> <!-- Augmentation du padding (p-8) -->
                         <span class="bg-amber-950 p-2 rounded-lg text-amber-400">🔍</span>
                         Comment trouver un groupe du nom dans une phrase ?
                     </h3>
@@ -473,7 +473,8 @@
                 title: "🗝️ Étape 1 : Le loquet de la porte",
                 subtitle: "Objectif : Corriger la délimitation de la phrase (Majuscules et points)",
                 instructions: "La porte d'entrée est scellée par une formule magique ! Pour l'ouvrir, tu dois replacer la majuscule au premier mot et ajouter un point d'arrêt à la fin de chaque phrase.",
-                phrase1: "hier soir un jeune garçon découvre une vieille cabane abandonnée près de la forêt",
+                // Modification de la phrase dans les données
+                phrase1: "soudain un jeune garçon découvre une vieille cabane abandonnée près de la forêt",
                 phrase2: "le petit explorateur avance doucement vers la porte mystérieuse",
                 hint: "Souviens-toi : une phrase commence toujours par une lettre majuscule et se termine par un point d'arrêt (comme un point ou un point d'exclamation).",
                 pedagogy: "Parfait ! Tu as identifié la délimitation de la phrase. Sans la majuscule et le point d'arrêt, le lecteur ne sait pas où commence et s'arrête l'idée de l'auteur. Tu gagnes le premier insigne : la Clé de la porte !"
@@ -529,15 +530,15 @@
             if (stepNumber === 1) {
                 /* ÉTAPE 1 : INTERFACE DE CORRECTION DES MAJUSCULES & POINTS */
                 html += `
-                    <div class="space-y-6 py-4">
-                        <div class="bg-[#170e08] p-5 rounded-2xl border border-[#4a2e18] space-y-4">
-                            <span class="text-xs font-bold text-amber-500 uppercase block">Clique sur les lettres ou les zones pointillées pour modifier :</span>
+                    <div class="space-y-8 py-6"> <!-- Augmentation de l'espace (space-y-8) et padding vertical (py-6) -->
+                        <div class="bg-[#170e08] p-6 rounded-2xl border border-[#4a2e18] space-y-6"> <!-- Augmentation du padding (p-6) -->
+                            <span class="text-sm font-bold text-amber-500 uppercase block mb-4">Clique sur les lettres ou les menus déroulants pour corriger :</span>
                             
-                            <!-- Phrase 1 -->
-                            <div class="flex flex-wrap items-baseline text-base md:text-lg font-black bg-[#281b11] p-3 rounded-xl border border-[#8b5a2b]/30 leading-relaxed">
-                                <button onclick="toggleCapital('p1-cap')" id="p1-cap" class="px-1.5 py-0.5 bg-amber-950 text-amber-400 rounded hover:bg-amber-900 border border-amber-700 leading-none mr-[1px] shadow-sm transition">h</button>
-                                <span class="text-stone-300">ier soir un jeune garçon découvre une vieille cabane abandonnée près de la forêt</span>
-                                <select id="p1-punc" class="bg-amber-950 text-amber-400 px-1 py-0.5 ml-[1px] rounded border border-amber-700 focus:outline-none font-bold text-sm cursor-pointer">
+                            <!-- Phrase 1 (Modifiée avec soudain) -->
+                            <div class="flex items-baseline text-lg md:text-xl font-black bg-[#281b11] p-4 rounded-xl border border-[#8b5a2b]/30 leading-loose">
+                                <button onclick="toggleCapital('p1-cap')" id="p1-cap" class="px-1 py-0.5 bg-amber-950 text-amber-400 rounded hover:bg-amber-900 border border-amber-700 leading-none cursor-pointer transition">s</button>
+                                <span class="text-stone-300">oudain un jeune garçon découvre une vieille cabane abandonnée près de la forêt</span>
+                                <select id="p1-punc" class="bg-amber-950 text-amber-400 px-1 py-0.5 rounded border border-amber-700 focus:outline-none font-bold text-base cursor-pointer ml-1">
                                     <option value="">[ ? ]</option>
                                     <option value=".">.</option>
                                     <option value="?">?</option>
@@ -546,10 +547,10 @@
                             </div>
 
                             <!-- Phrase 2 -->
-                            <div class="flex flex-wrap items-baseline text-base md:text-lg font-black bg-[#281b11] p-3 rounded-xl border border-[#8b5a2b]/30 leading-relaxed">
-                                <button onclick="toggleCapital('p2-cap')" id="p2-cap" class="px-1.5 py-0.5 bg-amber-950 text-amber-400 rounded hover:bg-amber-900 border border-amber-700 leading-none mr-[1px] shadow-sm transition">l</button>
+                            <div class="flex items-baseline text-lg md:text-xl font-black bg-[#281b11] p-4 rounded-xl border border-[#8b5a2b]/30 leading-loose">
+                                <button onclick="toggleCapital('p2-cap')" id="p2-cap" class="px-1 py-0.5 bg-amber-950 text-amber-400 rounded hover:bg-amber-900 border border-amber-700 leading-none cursor-pointer transition">l</button>
                                 <span class="text-stone-300">e petit explorateur avance doucement vers la porte mystérieuse</span>
-                                <select id="p2-punc" class="bg-amber-950 text-amber-400 px-1 py-0.5 ml-[1px] rounded border border-amber-700 focus:outline-none font-bold text-sm cursor-pointer">
+                                <select id="p2-punc" class="bg-amber-950 text-amber-400 px-1 py-0.5 rounded border border-amber-700 focus:outline-none font-bold text-base cursor-pointer ml-1">
                                     <option value="">[ ? ]</option>
                                     <option value=".">.</option>
                                     <option value="?">?</option>
@@ -738,7 +739,7 @@
             playSound('click');
             const btn = document.getElementById(btnId);
             if (btnId === 'p1-cap') {
-                btn.innerText = (btn.innerText === 'h') ? 'H' : 'h';
+                btn.innerText = (btn.innerText === 's') ? 'S' : 's'; // Modification pour "soudain"
             } else if (btnId === 'p2-cap') {
                 btn.innerText = (btn.innerText === 'l') ? 'L' : 'l';
             }
@@ -808,7 +809,8 @@
                 const p1Punc = document.getElementById('p1-punc').value;
                 const p2Punc = document.getElementById('p2-punc').value;
 
-                if (p1Cap === 'H' && p2Cap === 'L' && p1Punc === '.' && p2Punc === '.') {
+                // Validation ajustée pour "Soudain"
+                if (p1Cap === 'S' && p2Cap === 'L' && p1Punc === '.' && p2Punc === '.') {
                     isValid = true;
                 } else {
                     errorMessage = "Regarde bien : as-tu mis les deux majuscules en début de phrases et choisi le bon point d'arrêt '.' ?";
